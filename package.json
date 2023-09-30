@@ -183,7 +183,8 @@
             "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
             "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
             "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-            "sml": "cd $dir && sml $fileName"
+            "sml": "cd $dir && sml $fileName",
+            "mojo": "mojo run"
           },
           "description": "Set the executor of each language.",
           "scope": "resource"
@@ -221,7 +222,8 @@
             ".sass": "sass --style expanded",
             ".cu": "cd $dir && nvcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
             ".ring": "ring",
-            ".sml": "cd $dir && sml $fileName"
+            ".sml": "cd $dir && sml $fileName",
+            ".mojo": "mojo run"
           },
           "description": "Set the executor of each file extension.",
           "scope": "resource"
